@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" style="-fx-background-color:aliceblue;" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.LoginAsFXMLController">
+  <children>
+    <BorderPane prefHeight="600.0" prefWidth="900.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <center>
+        <VBox prefHeight="308.0" prefWidth="567.0" spacing="20.0">
+          <children>
+            <HBox alignment="CENTER" prefHeight="135.0" prefWidth="567.0" spacing="50.0">
+              <children>
+                <ImageView fitHeight="115.5" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow />
+                  </effect>
+                  <image>
+                    <Image url="@../img_src/admin1.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="115.5" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow />
+                  </effect>
+                  <image>
+                    <Image url="@../img_src/doctorIcon.png" />
+                  </image>
+                </ImageView>
+                <ImageView fitHeight="115.5" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                  <effect>
+                    <DropShadow />
+                  </effect>
+                  <image>
+                    <Image url="@../img_src/reception2.png" />
+                  </image>
+                </ImageView>
+              </children>
+              <padding>
+                <Insets fx:id="x4" />
+              </padding>
+              <VBox.margin>
+                <Insets top="80.0" />
+              </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="91.0" prefWidth="567" spacing="20.0">
+              <children>
+                <Button fx:id="adminButton" mnemonicParsing="false" onAction="#adminAction" prefHeight="46" prefWidth="154.0" style="" text="ADMIN">
+                  <effect>
+                    <DropShadow>
+                      <color>
+                        <Color blue="0.000" green="0.000" opacity="0.595" red="0.000" fx:id="x1" />
+                      </color>
+                    </DropShadow>
+                  </effect>
+                  <font>
+                    <Font name="Century Gothic Полужирный" size="15.0" fx:id="x2" />
+                  </font>
+                  <stylesheets>
+                    <URL value="@../style/scenes.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="doctorButton" font="$x2" mnemonicParsing="false" onAction="#doctorAction" prefHeight="46" prefWidth="154.0" text="DOCTOR">
+                  <effect>
+                    <DropShadow color="$x1" />
+                  </effect>
+                  <stylesheets>
+                    <URL value="@../style/scenes.css" />
+                  </stylesheets>
+                </Button>
+                <Button fx:id="receptionistButton" font="$x2" mnemonicParsing="false" onAction="#receptionistAction" prefHeight="46.0" prefWidth="154.0" text="RECEPTIONIST">
+                  <effect>
+                    <DropShadow color="#0000007b" />
+                  </effect>
+                  <stylesheets>
+                    <URL value="@../style/scenes.css" />
+                  </stylesheets>
+                </Button>
+              </children>
+            </HBox>
+            <HBox alignment="CENTER" padding="$x4" prefHeight="46.0" prefWidth="900" spacing="10.0">
+              <children>
+                <Label fx:id="contactusLabel" text="Contact us">
+                  <font>
+                    <Font name="Century Gothic" size="12.0" fx:id="x3" />
+                  </font>
+                </Label>
+                <Label fx:id="locationLabel" font="$x3" text="Location" />
+                <Label fx:id="faqLabel" font="$x3" text="FAQ" />
+              </children>
+              <VBox.margin>
+                <Insets top="156.0" />
+              </VBox.margin>
+            </HBox>
+          </children>
+          <BorderPane.margin>
+            <Insets top="40.0" />
+          </BorderPane.margin>
+        </VBox>
+      </center>
+      <top>
+        <VBox prefHeight="120.0" prefWidth="581.0">
+          <children>
+            <Label fx:id="hospitalLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="900" style="-fx-background-color:#3385ff;" text="Hospital   Management   System" textFill="WHITE">
+              <font>
+                <Font name="Century Gothic" size="32.0" />
+              </font>
+              <VBox.margin>
+                <Insets top="25.0" />
+              </VBox.margin>
+            </Label>
+            <Label fx:id="loginAsLabel" alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="208.0" style="-fx-background-color:white;" text="Login as" textAlignment="CENTER" textFill="#3385ff">
+              <font>
+                <Font name="Century Gothic" size="24.0" />
+              </font>
+              <VBox.margin>
+                <Insets top="8.0" />
+              </VBox.margin>
+            </Label>
+          </children>
+        </VBox>
+      </top>
+    </BorderPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

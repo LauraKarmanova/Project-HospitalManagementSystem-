@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel" prefHeight="599.0" prefWidth="904.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.LoginPanelFXMLController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="900.0" style="">
+      <bottom>
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      </bottom>
+      <center>
+        <GridPane alignment="CENTER" gridLinesVisible="false" minWidth="-1.0" pickOnBounds="true" prefHeight="-1.0" prefWidth="485.0" style="-fx-background-color:aliceblue;">
+          <children>
+            <Label fx:id="loginHereLabel" text="Login here" textFill="DEEPSKYBLUE" GridPane.columnIndex="1" GridPane.rowIndex="0">
+              <font>
+                <Font name="Century Gothic" size="24.0" />
+              </font>
+            </Label>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#logIn" prefHeight="30.0" prefWidth="123.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="3">
+              <effect>
+                <DropShadow color="#00000080" />
+              </effect>
+              <font>
+                <Font name="Century Gothic Полужирный" size="15.0" />
+              </font>
+              <stylesheets>
+                <URL value="@../style/scenes.css" />
+              </stylesheets>
+            </Button>
+            <TextField fx:id="username" minWidth="-1.0" prefHeight="30.0" prefWidth="275.0" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fitHeight="39.25" fitWidth="39.25" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+              <image>
+                <Image url="@../img_src/usernameIc.png" />
+              </image>
+              <GridPane.margin>
+                <Insets left="18.0" right="6.0" />
+              </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="37.625" fitWidth="37.625" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+              <image>
+                <Image url="@../img_src/passwordIc.png" />
+              </image>
+              <GridPane.margin>
+                <Insets left="20.0" />
+              </GridPane.margin>
+            </ImageView>
+            <PasswordField fx:id="password" prefHeight="30.0" prefWidth="298.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.0" minWidth="10.0" prefWidth="306.0" />
+          </columnConstraints>
+          <padding>
+            <Insets />
+          </padding>
+          <rowConstraints>
+            <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="183.0" minHeight="8.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <BorderPane.margin>
+            <Insets left="215.0" right="265.0" top="60.0" />
+          </BorderPane.margin>
+        </GridPane>
+      </center>
+      <left>
+        <ImageView fx:id="back" fitHeight="49.0" fitWidth="49.0" onMouseClicked="#backAction" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../img_src/back.png" />
+          </image>
+          <BorderPane.margin>
+            <Insets left="15.0" top="15.0" />
+          </BorderPane.margin>
+        </ImageView>
+      </left>
+      <top>
+        <Label alignment="CENTER" prefHeight="47.0" prefWidth="900.0" style="-fx-background-color:#00BFFF;" text="Hospital   Management   System" textFill="WHITE">
+          <font>
+            <Font name="Century Gothic" size="32.0" />
+          </font>
+          <BorderPane.margin>
+            <Insets top="25.0" />
+          </BorderPane.margin>
+        </Label>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

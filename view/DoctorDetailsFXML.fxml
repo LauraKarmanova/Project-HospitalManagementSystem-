@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.DoctorDetailsFXMLController">
+  <children>
+    <ImageView fitHeight="100.0" fitWidth="114.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="DEEPSKYBLUE" height="27.4225" radius="13.025625" spread="0.97" width="26.68" />
+      </effect>
+      <image>
+        <Image url="@../img_src/doctorIcon.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="114.0" layoutY="54.0" prefHeight="47.0" prefWidth="772.0" style="-fx-background-color: #00bfff;" text="Doctor Details" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="32.0" />
+      </font>
+    </Label>
+    <TextField fx:id="nameFild" layoutX="476.0" layoutY="182.0" prefHeight="30.0" prefWidth="200.0" />
+    <TextField fx:id="usernameFild" layoutX="476.0" layoutY="249.0" prefHeight="30.0" prefWidth="200.0" />
+    <TextField fx:id="passwordFild" layoutX="476.0" layoutY="317.0" prefHeight="30.0" prefWidth="200.0" />
+    <Label layoutX="218.0" layoutY="188.0" prefHeight="30.0" text="Name">
+      <font>
+        <Font name="Century Gothic" size="15.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="218.0" layoutY="252.0" prefHeight="30.0" text="Username" />
+    <Label font="$x1" layoutX="218.0" layoutY="320.0" prefHeight="30.0" text="Password" />
+    <Button fx:id="addBttn" font="$x1" layoutX="476.0" layoutY="381.0" mnemonicParsing="false" onAction="#addbttnAction" prefHeight="30.0" prefWidth="200.0" text="Add" textFill="WHITE" underline="true">
+      <effect>
+        <DropShadow height="14.952380952380953" radius="6.976190476190476" width="14.952380952380953" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <Button  fx:id="backBtn" font="$x1" layoutX="794.0" layoutY="65.0" mnemonicParsing="false" onAction="#toHome" style="" text="Back" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="28.336309523809522" radius="13.351934523809522" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

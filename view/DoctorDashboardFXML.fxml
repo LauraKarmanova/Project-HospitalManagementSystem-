@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.DoctorDashboardFXMLController">
+  <children>
+    <ImageView fx:id="logo" fitHeight="100.0" fitWidth="114.0" layoutX="21.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="DEEPSKYBLUE" height="26.703203125" radius="12.84580078125" spread="0.97" width="26.68" />
+      </effect>
+      <image>
+        <Image url="@../img_src/doctor2.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="121.0" layoutY="49.0" prefHeight="47.0" prefWidth="754.0" style="-fx-background-color: #00bfff;" text="Doctor Dashboard" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="32.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="469.9999896463456" fitWidth="705.0" layoutX="79.0" layoutY="130.0" opacity="0.52" pickOnBounds="true" preserveRatio="true" smooth="true">
+      <image>
+        <Image url="@../img_src/pexels-photo-48603.jpg" />
+      </image>
+    </ImageView>
+    <Button  fx:id="backBttn6" layoutX="791.0" layoutY="60.0" mnemonicParsing="false" onAction="#toLogin" style="" text="Back" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="27.091192336309522" radius="13.040655226934522" width="27.07142857142857" />
+      </effect>
+      <font>
+        <Font name="Century Gothic" size="15.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <Button id="backbtn3" fx:id="ptntDtlsBtn" font="$x1" layoutX="348.0" layoutY="260.0" mnemonicParsing="false" onAction="#ptntDtlsAction" prefHeight="40.0" prefWidth="205.0" style="" text="Patient Details" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="27.091192336309522" radius="13.040655226934522" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <Button id="backbtn3" fx:id="appntmntsBtn" font="$x1" layoutX="348.0" layoutY="357.0" mnemonicParsing="false" onAction="#appntmntsAction" prefHeight="40.0" prefWidth="205.0" style="" text="Appointments" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="27.091192336309522" radius="13.040655226934522" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

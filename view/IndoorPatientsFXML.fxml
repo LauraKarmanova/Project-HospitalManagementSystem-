@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.IndoorPatientsFXMLController">
+  <children>
+    <ImageView fitHeight="100.0" fitWidth="114.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="DEEPSKYBLUE" height="27.4225" radius="13.025625" spread="0.97" width="26.68" />
+      </effect>
+      <image>
+        <Image url="@../img_src/indoorPat.jpg" />
+      </image>
+    </ImageView>
+    <Label layoutX="115.0" layoutY="41.0" prefHeight="47.0" prefWidth="736.0" style="-fx-background-color: #00bfff;" text="Indoor Patients" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="32.0" />
+      </font>
+    </Label>
+    <TableView fx:id="tblIndoor" focusTraversable="true" layoutX="115.0" layoutY="110.0" prefHeight="435.0" prefWidth="636.0" tableMenuButtonVisible="false">
+      <columns>
+        <TableColumn editable="false" id="id" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" resizable="false" style="    -fx-background-color:#00bfff;" text="ID" fx:id="idIn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="84.0" resizable="false" style="    -fx-background-color:#00bfff;" text="First Name" fx:id="first_nameIn" />
+        <TableColumn prefWidth="75.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Last Name" fx:id="last_nameIn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="63.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Gender" fx:id="genderIn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Email" fx:id="emailIn" />
+        <TableColumn prefWidth="75.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Phone Number" fx:id="phone_numberIn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Address" fx:id="addressIn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Birth Date" fx:id="birth_dateIn" />
+      </columns>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </TableView>
+    <Button fx:id="loadBtnIn" layoutX="645.0" layoutY="556.0" mnemonicParsing="false" onAction="#loadBtnActionIn" prefHeight="30.0" prefWidth="92.0" text="Load" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="15.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <Button  fx:id="backBtn2" font="$x1" layoutX="751.0" layoutY="52.0" mnemonicParsing="false" onAction="#toHome" style="" text="Back" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="27.22953869047619" radius="13.07524181547619" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

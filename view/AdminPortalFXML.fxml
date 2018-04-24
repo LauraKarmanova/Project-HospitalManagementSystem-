@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPortalFXMLController">
+   <children>
+      <BorderPane maxHeight="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: aliceblue;">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img_src/admin1.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="DEEPSKYBLUE" height="29.65" radius="13.5825" spread="0.97" width="26.68" />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="47.0" prefWidth="689.0" style="-fx-background-color: #00bfff;" text="Admin Dashboard" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutAction" prefHeight="29.0" prefWidth="90.0" stylesheets="@../style/scenes.css" text="Logout">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="32.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow color="DEEPSKYBLUE" height="18.0" radius="9.25" spread="1.0" />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <Pane prefHeight="445.0" prefWidth="227.0" style="-fx-background-color: #00bfff;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="140.0" left="20.0" top="25.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label layoutX="31.0" layoutY="78.0" prefHeight="41.0" prefWidth="166.0" text="Welcome " textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="137.0" text="to " textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="187.0" text="Admin Portal" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="11.0" minWidth="11.0" prefWidth="11.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="0.0" prefWidth="11.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="11.0" minWidth="10.0" prefWidth="11.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="426.0" minWidth="10.0" prefWidth="200.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="135.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" prefHeight="22.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="135.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="15.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ImageView fitHeight="135.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../img_src/patientDet.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../img_src/doctorIcon.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../img_src/appointmentsa.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Hyperlink fx:id="doctorHyper" contentDisplay="CENTER" onAction="#doctorDetailsAction" prefHeight="27.0" prefWidth="91.0" text="Doctor" textAlignment="JUSTIFY" textFill="DEEPSKYBLUE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="receptionHyper" onAction="#receptionAction" text="Receptionist" textFill="DEEPSKYBLUE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin></Hyperlink>
+                  <Hyperlink fx:id="appointmentHyper" onAction="#appointmentsAction" text="Appointments" textFill="DEEPSKYBLUE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets left="45.0" />
+                     </padding>
+                  </Hyperlink>
+                  <Hyperlink fx:id="indoorHyper" onAction="#indoorPatAction" text="Indoor Patients" textFill="DEEPSKYBLUE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="37.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="outdoorHyper" onAction="#outdoorPatAction" text="Outdoor Patients" textFill="DEEPSKYBLUE" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="patientHyper" onAction="#patientDetailsAction" prefHeight="15.0" prefWidth="196.0" text="Patient" textAlignment="CENTER" textFill="DEEPSKYBLUE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="60.0" />
+                     </GridPane.margin>
+                  </Hyperlink>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../img_src/outdoorPat.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../img_src/indoorPat.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets left="32.5" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@../img_src/reception.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="88.0" right="20.0" top="28.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

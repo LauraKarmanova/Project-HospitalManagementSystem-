@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.OutdoorPatientsFXMLController">
+  <children>
+    <TableView fx:id="tblOutdoor" focusTraversable="true" layoutX="141.0" layoutY="137.0" prefHeight="377.0" prefWidth="636.0" tableMenuButtonVisible="false">
+      <columns>
+        <TableColumn editable="false" id="id" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" resizable="false" style="    -fx-background-color:#00bfff;" text="ID" fx:id="id" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="84.0" resizable="false" style="    -fx-background-color:#00bfff;" text="First Name" fx:id="first_name" />
+        <TableColumn prefWidth="75.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Last Name" fx:id="last_name" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="63.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Gender" fx:id="gender" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Email" fx:id="email" />
+        <TableColumn prefWidth="75.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Phone Number" fx:id="phone_number" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Address" fx:id="address" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="90.0" resizable="false" style="    -fx-background-color:#00bfff;" text="Birth Date" fx:id="birth_date" />
+      </columns>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </TableView>
+    <Button fx:id="loadBtn" layoutX="676.0" layoutY="530.0" mnemonicParsing="false" onAction="#loadBtnAction" prefHeight="30.0" prefWidth="92.0" text="Load" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="15.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <ImageView fitHeight="100.0" fitWidth="114.0" layoutX="32.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="DEEPSKYBLUE" height="26.865625" radius="12.88640625" spread="0.97" width="26.68" />
+      </effect>
+      <image>
+        <Image url="@../img_src/outdoorPat.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="132.0" layoutY="51.0" prefHeight="47.0" prefWidth="754.0" style="-fx-background-color: #00bfff;" text="Outdoor Patients" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="32.0" />
+      </font>
+    </Label>
+    <Button  fx:id="backbtn3" font="$x1" layoutX="802.0" layoutY="62.0" mnemonicParsing="false" onAction="#toHome" style="" text="Back" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="27.22953869047619" radius="13.07524181547619" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+.button{
+    -fx-background-color:white;
+    -fx-text-fill:#00bfff;
+
+
+}
+.button:hover{
+    -fx-background-color:grey;
+}
+.paneBackground{
+    -fx-background-color:aliceblue;
+}
+.labelHosp{
+    -fx-padding-top: 40px;
+    -fx-backgroud-color: aliceblue;
+
+}
+.labelLogin{
+    -fx-font-family: Georgia;
+    -fx-font-size: 35px;
+    -fx-padding-top:60px;
+}

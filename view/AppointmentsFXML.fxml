@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.AppointmentsFXMLController">
+  <children>
+    <ImageView fitHeight="100.0" fitWidth="114.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <DropShadow color="DEEPSKYBLUE" height="26.865625" radius="12.88640625" spread="0.97" width="26.68" />
+      </effect>
+      <image>
+        <Image url="@../img_src/appointmentsa.png" />
+      </image>
+    </ImageView>
+    <Label layoutX="130.0" layoutY="55.0" prefHeight="47.0" prefWidth="754.0" style="-fx-background-color: #00bfff;" text="Appointments" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="32.0" />
+      </font>
+    </Label>
+    <TextField fx:id="idApoi" layoutX="351.0" layoutY="165.0" prefHeight="30.0" prefWidth="200.0" promptText="ID" />
+    <Button id="homeButton" fx:id="addBtnAp" layoutX="351.0" layoutY="274.0" mnemonicParsing="false" onAction="#addBtnAp" prefWidth="200.0" style="" text="Add" textFill="WHITE">
+      <font>
+        <Font name="Century Gothic" size="15.0" fx:id="x1" />
+      </font>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+    <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="320.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img_src/firstName.png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="dotw" layoutX="351.0" layoutY="216.0" prefHeight="30.0" prefWidth="200.0" promptText="Day of the week" />
+    <ImageView fitHeight="26.0" fitWidth="34.66666813602955" layoutX="320.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../img_src/appointments.png" />
+      </image>
+    </ImageView>
+    <TableView id="" fx:id="tblAppointment" layoutX="17.0" layoutY="316.0" prefHeight="234.5" prefWidth="867.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="35.0" text="id" fx:id="idAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="103.0" text="First_name" fx:id="first_nameAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" text="Last_name" fx:id="last_nameAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="45.0" text="Gender" fx:id="genderAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="112.0" text="Email" fx:id="emailAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="106.0" text="Phone_number" fx:id="phone_numberAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="101.0" text="Address" fx:id="addressAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="44.0" text="Birth_Date" fx:id="birth_dateAp" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Day of the week" fx:id="timeAp" />
+      </columns>
+    </TableView>
+    <Button  fx:id="homebtn1" font="$x1" layoutX="788.0" layoutY="66.0" mnemonicParsing="false" onAction="#toHome" style="" text="Back" textFill="WHITE">
+      <effect>
+        <DropShadow color="WHITE" height="37.19047619047618" radius="15.56547619047619" width="27.07142857142857" />
+      </effect>
+      <stylesheets>
+        <URL value="@../style/style1.css" />
+      </stylesheets>
+    </Button>
+  </children>
+</AnchorPane>
